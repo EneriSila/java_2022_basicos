@@ -38,6 +38,11 @@ public class NotasMain {
 			    break;
 			case 6:
 				mostrarSuspensos();
+			case 7:
+				subirNotas();
+			case 8:
+				
+				
 			
 
 			}
@@ -50,7 +55,8 @@ public class NotasMain {
 		System.out.println("4.- Notas extremas");   
 		System.out.println("5.- Mostrar todas");
 		System.out.println("6.- Eliminar Suspensos");
-		System.out.println("7.- Salir");
+		System.out.println("7.- Subir Notas");
+		System.out.println("8.- Salir");
 	}  
 	
 	static void pedirNota() {
@@ -65,8 +71,8 @@ public class NotasMain {
 		System.out.println("La media es: "+ notasService.media());
 	}
 	static void mostrarAprobados() {
-		System.out.println("Nota máxima: "+notasService.notaMax());
-		System.out.println("Nota mínima: "+notasService.notaMin());
+		System.out.println("Los aprobados son: "+notasService.notaMax());
+		System.out.println("Los aprobados son: "+notasService.notaMin());
 	}
 	static void mostrarExtremas() {
 		System.out.println("Nota máxima: "+notasService.notaMax());
